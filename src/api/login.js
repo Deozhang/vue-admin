@@ -22,7 +22,7 @@ export function logout(token) {
 
 export function getInfo(token) {
   return fetch({
-    url: '/api/admin/user/front/info',
+    url: '/api/admin/front/info',
     method: 'get',
     params: { token }
   });
@@ -30,7 +30,7 @@ export function getInfo(token) {
 
 export function getMenus(token) {
   return fetch({
-    url: '/api/admin/user/front/menus',
+    url: '/api/admin/front/menus',
     method: 'get',
     params: { token }
   });
@@ -38,7 +38,7 @@ export function getMenus(token) {
 
 export function getAllMenus() {
   return fetch({
-    url: '/api/admin/user/front/menu/all',
+    url: '/api/admin/front/menu/all',
     method: 'get'
   });
 }
